@@ -1,0 +1,17 @@
+{
+  "name": "sr-monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "release": "pnpm -r --workspace-concurrency=1 exec -- semantic-release --dry-run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "conventional-changelog-conventionalcommits": "^8.0.0",
+    "semantic-release": "^24.2.0",
+    "semantic-release-monorepo": "^8.0.2"
+  }
+}
