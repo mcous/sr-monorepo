@@ -1,8 +1,9 @@
 {
-  "name": "sr-monorepo",
+  "name": "@mcous/sr-monorepo",
   "version": "1.0.0",
+  "private": true,
   "description": "",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
     "release": "pnpm -r --workspace-concurrency=1 exec -- semantic-release --dry-run"
   },

@@ -2,6 +2,12 @@
   "name": "@mcous/test-project-b",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcous/sr-monorepo.git",
+    "directory": "packages/project-b"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
