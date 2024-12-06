@@ -1,3 +1,8 @@
+import fs from 'node:fs';
+
+const pkg = fs.readFileSync('./package.json', 'utf-8');
+const pkgName = JSON.parse(pkg).name;
+
 export default {
   preset: 'conventionalcommits',
   branches: ['main', { name: 'next', prerelease: true }],
@@ -13,7 +18,7 @@ export default {
         publishCmd: 'pnpm pack',
       },
     ],
-    // '@semantic-release/github',
+    '@semantic-release/github',
   ],
-  tagFormat: '${PACKAGE_NAME}@v{VERSION}',
+  tagFormat: pkgName + '@${version}',
 };
