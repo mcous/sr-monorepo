@@ -1,6 +1,6 @@
 {
   "name": "@mcous/test-project-b",
-  "version": "0.0.0-semantically-released",
+  "version": "1.0.0+semantically-released",
   "description": "",
   "type": "module",
   "repository": {

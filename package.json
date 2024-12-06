@@ -4,7 +4,7 @@
   "description": "",
   "type": "module",
   "scripts": {
-    "release": "pnpm -r --workspace-concurrency=1 exec -- semantic-release --dry-run"
+    "release": "pnpm -r --workspace-concurrency=1 exec -- semantic-release"
   },
   "keywords": [],
   "author": "",
