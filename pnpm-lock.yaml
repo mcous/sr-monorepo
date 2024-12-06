@@ -8,6 +8,9 @@ importers:
 
   .:
     devDependencies:
+      '@semantic-release/exec':
+        specifier: ^6.0.3
+        version: 6.0.3(semantic-release@24.2.0)
       conventional-changelog-conventionalcommits:
         specifier: ^8.0.0
         version: 8.0.0
@@ -23,7 +26,7 @@ importers:
   packages/project-b:
     dependencies:
       '@mcous/test-project-a':
-        specifier: ^1.0.0
+        specifier: workspace:^
         version: link:../project-a
 
 packages:
@@ -209,9 +212,31 @@ packages:
       - supports-color
     dev: true
 
+  /@semantic-release/error@3.0.0:
+    resolution: {integrity: sha512-5hiM4Un+tpl4cKw3lV4UgzJj+SmfNIDCLLw0TepzQxz9ZGV5ixnqkzIVF+3tp0ZHgcMKE+VNGHJjEeyFG2dcSw==}
+    engines: {node: '>=14.17'}
+    dev: true
+
   /@semantic-release/error@4.0.0:
     resolution: {integrity: sha512-mgdxrHTLOjOddRVYIYDo0fR3/v61GNN1YGkfbrjuIKg/uMgCd+Qzo3UAXJ+woLQQpos4pl5Esuw5A7AoNlzjUQ==}
     engines: {node: '>=18'}
+    dev: true
+
+  /@semantic-release/exec@6.0.3(semantic-release@24.2.0):
+    resolution: {integrity: sha512-bxAq8vLOw76aV89vxxICecEa8jfaWwYITw6X74zzlO0mc/Bgieqx9kBRz9z96pHectiTAtsCwsQcUyLYWnp3VQ==}
+    engines: {node: '>=14.17'}
+    peerDependencies:
+      semantic-release: '>=18.0.0'
+    dependencies:
+      '@semantic-release/error': 3.0.0
+      aggregate-error: 3.1.0
+      debug: 4.4.0
+      execa: 5.1.1
+      lodash: 4.17.21
+      parse-json: 5.2.0
+      semantic-release: 24.2.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /@semantic-release/github@11.0.1(semantic-release@24.2.0):
@@ -1294,6 +1319,10 @@ packages:
 
   /lodash.uniqby@4.7.0:
     resolution: {integrity: sha512-e/zcLx6CSbmaEgFHCA7BnoQKyCtKMxnuWrJygbwPs/AIn+IMKl66L8/s+wBUn5LRw2pZx3bUHibiV1b6aTWIww==}
+    dev: true
+
+  /lodash@4.17.21:
+    resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
     dev: true
 
   /lru-cache@10.4.3:

@@ -1,6 +1,6 @@
 {
   "name": "@mcous/test-project-b",
-  "version": "1.0.0",
+  "version": "0.0.0-semantically-released",
   "description": "",
   "type": "module",
   "repository": {
@@ -16,6 +16,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@mcous/test-project-a": "^1.0.0"
+    "@mcous/test-project-a": "workspace:^"
   }
 }
