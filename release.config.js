@@ -9,7 +9,7 @@ export default {
       '@semantic-release/exec',
       {
         prepareCmd:
-          'pnpm version ${nextRelease.version} --git-tag-version=false',
+          'pnpm version ${nextRelease.version} --git-tag-version=false --allow-same-version',
         publishCmd: 'pnpm pack',
       },
     ],
