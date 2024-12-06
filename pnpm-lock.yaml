@@ -26,7 +26,7 @@ importers:
   packages/project-b:
     dependencies:
       '@mcous/test-project-a':
-        specifier: workspace:^
+        specifier: workspace:^1.0.0
         version: link:../project-a
 
 packages:

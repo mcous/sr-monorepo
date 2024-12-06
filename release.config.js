@@ -10,7 +10,7 @@ export default {
       {
         prepareCmd:
           'pnpm version ${nextRelease.version} --git-tag-version=false',
-        publishCmd: 'pnpm publish --no-git-checks --dry-run',
+        publishCmd: 'pnpm pack',
       },
     ],
     // '@semantic-release/github',

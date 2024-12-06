@@ -16,6 +16,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@mcous/test-project-a": "workspace:^"
+    "@mcous/test-project-a": "workspace:^1.0.0"
   }
 }
