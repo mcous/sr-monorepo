@@ -15,4 +15,5 @@ export default {
     ],
     // '@semantic-release/github',
   ],
+  tagFormat: '${PACKAGE_NAME}@v{VERSION}',
 };
